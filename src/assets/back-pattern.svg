@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="225" height="225" viewBox="0 0 225 225">
+  <defs>
+    <radialGradient id="back-pattern-a" cx="43.338%" cy="41.589%" r="101.777%" fx="43.338%" fy="41.589%" gradientTransform="scale(1 .84433) rotate(-46.32 .523 .454)">
+      <stop offset="0%" stop-color="#002FA6"/>
+      <stop offset="100%" stop-color="#002FA6" stop-opacity=".19"/>
+    </radialGradient>
+    <linearGradient id="back-pattern-b" x1="58.878%" x2="110.466%" y1="32.707%" y2="-6.319%">
+      <stop offset="0%" stop-color="#FE2591"/>
+      <stop offset="42.622%" stop-color="#FE2591" stop-opacity=".574"/>
+      <stop offset="100%" stop-color="#FE2591" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="back-pattern-c" x1="88.797%" x2="-11.693%" y1="-10.544%" y2="151.983%">
+      <stop offset="0%" stop-color="#ECC4B1"/>
+      <stop offset="100%" stop-color="#ECC4B1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-55 -14)">
+    <rect width="320" height="379" fill="url(#back-pattern-a)" rx="71"/>
+    <rect width="302" height="320" x="127" y="68" fill="url(#back-pattern-b)" rx="71" transform="rotate(-90 278 228)"/>
+    <rect width="168" height="155" x="-2" y="28" fill="url(#back-pattern-c)" rx="71" transform="rotate(-90 82 105.5)"/>
+  </g>
+</svg>

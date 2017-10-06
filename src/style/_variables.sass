@@ -1,0 +1,35 @@
+$grey-space: #696969
+$dark-grey: #555555
+$pink-space: #FE2591
+$blue-space: #535bb7
+$grey-p: #536171
+
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+body
+  font-family: 'Roboto', sans-serif
+  padding: 0
+  margin: 0
+section
+  display: flex
+  flex-flow: column wrap
+  margin: 5%
+a
+  text-decoration: none
+p
+  line-height: 1.6
+  font-size: 16px
+  color: $grey-p
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+.post-single a, h2
+  color: $blue-space
+.post-single p, li
+  color: $dark-grey
+.index-blog
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-around
+  align-items: center
+  align-self: center
+  width: 85vw
+  margin: auto
