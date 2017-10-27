@@ -8,6 +8,8 @@ import Video from '@/pages/Video'
 import Tag from '@/pages/tags/_tag'
 import Web from '@/pages/web/index'
 import WebSlug from '@/pages/web/_slug'
+import Test from '@/pages/test'
+import Locked from '@/pages/locked'
 Vue.use(Router)
 
 export default new Router({
@@ -54,6 +56,16 @@ export default new Router({
       path: '/web/:slug',
       name: ':slug',
       component: WebSlug
+    },
+    {
+      path: '/test',
+      name: 'Test',
+      component: Test
+    },
+    {
+      path: '/locked',
+      name: 'Locked',
+      component: Locked
     }
   ]
 })

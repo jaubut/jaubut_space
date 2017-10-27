@@ -50,8 +50,8 @@ export default {
 <style lang="sass" scoped>
 .photo-page
   display: grid
-  grid-template: 1fr / 20% 43% 34%
-  grid-gap: 10px
+  grid-template: 45% 25% 25% / repeat(auto-fill, 23%)
+  grid-gap: 5px
   justify-content: center
   .photo
     display: flex
@@ -59,7 +59,7 @@ export default {
     justify-content: flex-end
     min-height: 250px
     background-position: center center
-    background-size: 100%
+    background-size: cover
     background-repeat: no-repeat
     &:hover
       cursor: pointer
@@ -80,6 +80,8 @@ export default {
       color: black
       &:hover
         background: white
+  .photo:nth-child(3n)
+    grid-row: span 2
 ::selection
   background: transparent
 h2

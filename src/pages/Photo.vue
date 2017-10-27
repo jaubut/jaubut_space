@@ -11,7 +11,6 @@
         :erase-delay='100'
       ></vue-typer></span></TitleSpace>
     <PhotoPage></PhotoPage>
-    <SocialSharing></SocialSharing>
   </div>
 </template>
 <script>
