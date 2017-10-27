@@ -15,6 +15,7 @@
       <p>{{ video.name }}</p>
       <iframe :src="'https://player.vimeo.com' + video.uri.replace(/s/g, '')" width="80%" height="300px" frameborder="0" :title="video.name" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
+    <router-link :to="{ name: 'Login'}">Login</router-link>
   </div>
 </template>
 <script>
