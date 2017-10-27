@@ -8,8 +8,8 @@ import Video from '@/pages/Video'
 import Tag from '@/pages/tags/_tag'
 import Web from '@/pages/web/index'
 import WebSlug from '@/pages/web/_slug'
-import Test from '@/pages/test'
-import Locked from '@/pages/locked'
+import Test from '@/pages/Test'
+import Locked from '@/pages/Locked'
 Vue.use(Router)
 
 export default new Router({
@@ -19,6 +19,10 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '*',
+      redirect: '/'
     },
     {
       path: '/photo',
