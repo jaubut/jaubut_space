@@ -9,7 +9,7 @@ import Tag from '@/pages/tags/_tag'
 import Web from '@/pages/web/index'
 import WebSlug from '@/pages/web/_slug'
 import Test from '@/pages/Test'
-import Locked from '@/pages/Locked'
+import Login from '@/pages/Login'
 Vue.use(Router)
 
 export default new Router({
@@ -67,9 +67,9 @@ export default new Router({
       component: Test
     },
     {
-      path: '/locked',
-      name: 'Locked',
-      component: Locked
+      path: '/login',
+      name: 'Login',
+      component: Login
     }
   ]
 })
