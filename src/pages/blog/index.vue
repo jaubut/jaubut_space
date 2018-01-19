@@ -11,6 +11,8 @@
         :erase-delay='100'
       ></vue-typer></span>
     </TitleSpace>
+    <p @click="lang = 'fr'">fr</p>
+    <p @click="lang = 'en-US'">en</p>
     <div class="index-blog">
       <div v-for="post in posts">
         <blogCard :post="post"></blogCard>
@@ -33,13 +35,18 @@ export default {
   },
   data () {
     return {
-      posts: []
+      posts: [],
+      lang: ''
     }
   },
+  watch: {
+    'lang': 'fetchData'
+  },
   methods: {
-    getEntries () {
+    fetchData () {
       return client.getEntries({
         'content_type': 'blogPost',
+        'locale': this.lang,
         order: '-sys.createdAt'
       })
       .then(response => {
@@ -49,7 +56,7 @@ export default {
     }
   },
   created () {
-    this.getEntries()
+    this.fetchData()
   }
 }
 </script>
